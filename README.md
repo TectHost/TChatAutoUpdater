@@ -1,2 +1,1 @@
-# TChatAutoUpdater
-Auto YML updater for TChat plugin
+# [TChat](https://github.com/TectHost/TChat)
