@@ -1,0 +1,67 @@
+# #################################################################
+# ┌─────────────────────────────────────────────────────────────┐ #
+# │                      Auto Updater Addon                     │ #
+# └─────────────────────────────────────────────────────────────┘ #
+# #################################################################
+
+# #################################################################
+# ┌─────────────────────────────────────────────────────────────┐ #
+# │ It is recommended that you uninstall the addon after        │ #
+# │ updating the plugin, the load that this addon generates     │ #
+# │ when starting the server is very large, the best thing to   │ #
+# │ do is to update the files with the addon and uninstall it   │ #
+# │ or disable all its functions.                               │ #
+# └─────────────────────────────────────────────────────────────┘ #
+# #################################################################
+
+all-disabled: false
+
+files:
+  # Controls updates for autobroadcast.yml
+  autobroadcast: true
+  # Controls updates for banned_commands.yml
+  banned_commands: true
+  # Controls updates for banned_words.yml
+  banned_words: true
+  # Controls updates for channels.yml
+  channels: true
+  # Controls updates for chatbot.yml
+  chatbot: true
+  # Controls updates for chatgames.yml
+  chatgames: true
+  # Controls updates for command_programmer.yml
+  command_programmer: true
+  # Controls updates for command_timer.yml
+  command_timer: true
+  # Controls updates for commands.yml
+  commands: true
+  # Controls updates for config.yml
+  config: true
+  # Controls updates for death.yml
+  death: true
+  # Controls updates for groups.yml
+  # (I recommend leaving this on false and updating it manually if necessary)
+  groups: false
+  # Controls updates for joins.yml
+  # (I recommend leaving this on false and updating it manually if necessary)
+  joins: false
+  # Controls updates for levels.yml
+  levels: true
+  # Controls updates for messages.yml
+  messages: true
+  # Controls updates for placeholders.yml
+  placeholders: true
+  # Controls updates for replacer.yml
+  replacer: true
+  # Controls updates for saves.yml
+  saves: true
+  # Controls updates for worlds.yml
+  worlds: true
+
+folders:
+  hooks:
+    # Controls updates for hooks/discord.yml
+    discord: true
+  menus:
+    # Controls updates for menus/chatcolor.yml
+    chatcolor: true

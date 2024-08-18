@@ -1,0 +1,6 @@
+name: TChatUpdater
+version: 1.0.0-BETA
+main: tchat.TChatUpdater
+author: Mine_Alex
+
+api-version: 1.13
