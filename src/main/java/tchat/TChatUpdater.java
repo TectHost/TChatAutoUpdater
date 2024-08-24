@@ -4,6 +4,7 @@ import managers.ConfigManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
+import updater.Backup;
 import updater.YamlUpdater;
 
 import java.io.File;
@@ -15,6 +16,10 @@ public class TChatUpdater extends JavaPlugin {
     @Override
     public void onEnable() {
         Bukkit.getConsoleSender().sendMessage(ChatColor.GRAY + "[" + ChatColor.DARK_PURPLE + "TChat" + ChatColor.GRAY + "] " + ChatColor.GREEN + "Starting TChatUpdater...");
+
+        Backup backup = new Backup(this);
+
+        backup.createBackup();
 
         registerConfigFiles();
 
@@ -40,6 +45,7 @@ public class TChatUpdater extends JavaPlugin {
                 "groups.yml",
                 "joins-yml",
                 "levels.yml",
+                "mentions.yml",
                 "messages.yml",
                 "placeholders.yml",
                 "replacer.yml",

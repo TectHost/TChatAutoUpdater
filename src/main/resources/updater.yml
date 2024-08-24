@@ -18,35 +18,35 @@ all-disabled: false
 
 files:
   # Controls updates for autobroadcast.yml
-  autobroadcast: true
+  autobroadcast: false
   # Controls updates for banned_commands.yml
   banned_commands: true
   # Controls updates for banned_words.yml
   banned_words: true
   # Controls updates for channels.yml
-  channels: true
+  channels: false
   # Controls updates for chatbot.yml
-  chatbot: true
+  chatbot: false
   # Controls updates for chatgames.yml
-  chatgames: true
+  chatgames: false
   # Controls updates for command_programmer.yml
-  command_programmer: true
+  command_programmer: false
   # Controls updates for command_timer.yml
-  command_timer: true
+  command_timer: false
   # Controls updates for commands.yml
-  commands: true
+  commands: false
   # Controls updates for config.yml
   config: true
   # Controls updates for death.yml
   death: true
   # Controls updates for groups.yml
-  # (I recommend leaving this on false and updating it manually if necessary)
   groups: false
   # Controls updates for joins.yml
-  # (I recommend leaving this on false and updating it manually if necessary)
   joins: false
   # Controls updates for levels.yml
   levels: true
+  # Controls updates for mentions.yml
+  mentions: false
   # Controls updates for messages.yml
   messages: true
   # Controls updates for placeholders.yml
@@ -54,9 +54,9 @@ files:
   # Controls updates for replacer.yml
   replacer: true
   # Controls updates for saves.yml
-  saves: true
+  saves: false
   # Controls updates for worlds.yml
-  worlds: true
+  worlds: false
 
 folders:
   hooks:
@@ -64,4 +64,4 @@ folders:
     discord: true
   menus:
     # Controls updates for menus/chatcolor.yml
-    chatcolor: true
+    chatcolor: false

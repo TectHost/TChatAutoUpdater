@@ -1,5 +1,5 @@
 name: TChatUpdater
-version: 1.0.0-BETA
+version: 1.0.1-BETA
 main: tchat.TChatUpdater
 author: Mine_Alex
 
