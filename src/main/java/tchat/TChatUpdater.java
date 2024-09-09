@@ -4,6 +4,7 @@ import managers.ConfigManager;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
+import org.jetbrains.annotations.NotNull;
 import updater.Backup;
 import updater.YamlUpdater;
 
@@ -55,7 +56,8 @@ public class TChatUpdater extends JavaPlugin {
 
         String[] folders = {
                 "hooks/discord.yml",
-                "menus/chatcolor.yml"
+                "menus/chatcolor.yml",
+                "menus/invsee.yml"
         };
 
         File tchatDir = new File(getDataFolder().getParentFile(), "TChat");
@@ -101,7 +103,7 @@ public class TChatUpdater extends JavaPlugin {
         Bukkit.getConsoleSender().sendMessage(ChatColor.GRAY + "[" + ChatColor.DARK_PURPLE + "TChat" + ChatColor.GRAY + "] " + ChatColor.RED + "TChatUpdater stopped");
     }
 
-    private void synchronizeFile(String remoteUrl, File localFile) {
+    private void synchronizeFile(String remoteUrl, @NotNull File localFile) {
         YamlUpdater yamlUpdater = new YamlUpdater();
 
         if (!localFile.getParentFile().exists()) {

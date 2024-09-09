@@ -3,6 +3,7 @@ package managers;
 import org.bukkit.Bukkit;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.jetbrains.annotations.NotNull;
 import tchat.TChatUpdater;
 
 import java.io.File;
@@ -15,7 +16,7 @@ public class ConfigManager {
 
     private final FileConfiguration config;
 
-    public ConfigManager(TChatUpdater plugin) {
+    public ConfigManager(@NotNull TChatUpdater plugin) {
         File configFile = new File(plugin.getDataFolder().getParentFile(), "TChat/addons/updater.yml");
 
         if (!configFile.exists()) {

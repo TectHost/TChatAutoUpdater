@@ -1,6 +1,7 @@
 package updater;
 
 import org.bukkit.plugin.Plugin;
+import org.jetbrains.annotations.NotNull;
 
 import java.io.File;
 import java.io.IOException;
@@ -36,7 +37,7 @@ public class Backup {
         plugin.getLogger().info("Backup complete: " + currentBackup.getAbsolutePath());
     }
 
-    private void copyDirectory(File source, File target, File excludeDir) {
+    private void copyDirectory(@NotNull File source, File target, File excludeDir) {
         if (source.isDirectory()) {
             if (source.equals(excludeDir)) {
                 return;

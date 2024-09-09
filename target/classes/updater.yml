@@ -65,3 +65,5 @@ folders:
   menus:
     # Controls updates for menus/chatcolor.yml
     chatcolor: false
+    # Controls updates for menus/invsee.yml
+    invsee: false

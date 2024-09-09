@@ -2,6 +2,7 @@ package updater;
 
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
+import org.jetbrains.annotations.NotNull;
 
 import java.io.*;
 import java.net.URL;
@@ -26,7 +27,7 @@ public class YamlUpdater {
         }
     }
 
-    private void mergeConfigurations(FileConfiguration localConfig, FileConfiguration remoteConfig) {
+    private void mergeConfigurations(FileConfiguration localConfig, @NotNull FileConfiguration remoteConfig) {
         for (String key : remoteConfig.getKeys(true)) {
             if (!localConfig.contains(key)) {
                 localConfig.set(key, remoteConfig.get(key));
