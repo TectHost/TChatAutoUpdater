@@ -67,3 +67,5 @@ folders:
     chatcolor: false
     # Controls updates for menus/invsee.yml
     invsee: false
+    # Controls updates for menus/show_ender_chest.yml
+    show_ender_chest: false

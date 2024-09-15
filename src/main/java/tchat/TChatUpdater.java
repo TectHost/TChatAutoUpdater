@@ -57,7 +57,8 @@ public class TChatUpdater extends JavaPlugin {
         String[] folders = {
                 "hooks/discord.yml",
                 "menus/chatcolor.yml",
-                "menus/invsee.yml"
+                "menus/invsee.yml",
+                "menus/show_ender_chest.yml"
         };
 
         File tchatDir = new File(getDataFolder().getParentFile(), "TChat");
